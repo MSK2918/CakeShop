@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="logo.jpg" alt="logo"><span><a href="#Home">Delightful Cakes</a></span>
+            <ul>
+                <li><a href="#Home" class="navbtn">Home</a></li>
+                <li><a href="#Specialties" class="navbtn">Specialties</a></li>
+                <li><a href="#Gallery" class="navbtn">Gallery</a></li>
+                <li><a href="#Place-Order" id="order">Place Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Home">
+            <div class="left">
+                <h3>Welcome to <br> <span>Delightful Cakes </span> </h3>
+                <p>Indulge in the irresistible taste of our homemade cakes. <br> Each creation is crafted
+                    with love and care <br> to bring you joy with every bite.</p>
+                <a href="#Place-Order">Place Your Order</a>
+            </div>
+
+            <div class="right">
+                <img src="Home1.jpg" alt="cake" class="anim">
+            </div>
+
+        </section>
+
+        <section id="Specialties">
+            <h2>Our Specialties</h2>
+            <div class="outer-box">
+                <div class="cake-category">
+                    <img src="Classic.jpg" alt="Classic">
+                    <div class="inner-box">
+                        <h3>Classic Favorites</h3>
+                        <p>Indulge in timeless classics that bring back nostalgic flavors. From rich chocolate cakes to
+                            moist vanilla delights, our classic favorites are perfect for any occasion.</p>
+                    </div>
+                    <div class="btn">
+                        <button>Explore</button>
+                    </div>
+                </div>
+
+                <div class="cake-category">
+                    <img src="Innovative.jpg" alt="">
+                    <div class="inner-box">
+                        <h3>Innovative Creations</h3>
+                        <p>Explore our innovative creations that push the boundaries of traditional cake-making. These
+                            unique and artistic cakes are designed to surprise and delight your taste buds.</p>
+                    </div>
+                    <div class="btn">
+                        <button>Explore</button>
+                    </div>
+                </div>
+
+                <div class="cake-category">
+                    <img src="Special.jpg" alt="">
+                    <div class="inner-box">
+                        <h3>Special Occasion Cakes</h3>
+                        <p>Make your celebrations memorable with our special occasion cakes. Whether it's a
+                            birthday,anniversary or any other milestone, our expertly crafted cakes add a sweet touch.
+                        </p>
+                    </div>
+                    <div class="btn">
+                        <button>Explore</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Gallery">
+            <h2>Our Gallery</h2>
+            <div class="gout-box">
+                <div class="gbox">
+                    <img src="G1.jpg" alt="img1">
+                    <img src="G2.jpg" alt="img2">
+                    <img src="G3.jpg" alt="img3">
+                    <img src="G4.jpg" alt="img4">
+                    <img src="G5.jpg" alt="img5">
+                    <img src="G6.jpg" alt="img6">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="Place-Order">
+            <h2>Place Your Order</h2>
+            <div class="out-box">
+                <img src="Order.jpg" alt="">
+                <form action="#">
+                    <div class="in-box">
+
+                        <div class="b">
+                            <label for="Name"></label>
+                            <input type="text" placeholder="name" id="Name" required>
+                        </div>
+
+                        <div class="b">
+                            <label for="Email"></label>
+                            <input type="tel" placeholder="email" id="Phone" required>
+                        </div>
+
+                        <div class="b">
+                            <label for="Phone"></label>
+                            <input type="tel" placeholder="phone" id="Phone" required>
+                        </div>
+
+                        <div class="b">
+                            <label for="quantity"></label>
+                            <input type="number" id="quantity" placeholder="quantity" required>
+                        </div>
+
+                        <div class="b1">
+                            <label for="Cake-type">Cake type:</label>
+                            <select name="Cake-type" id="Cake-type" required>
+                                <option value="classic">Classic</option>
+                                <option value="innovative">Innovative</option>
+                                <option value="special">Special</option>
+                            </select>
+                        </div>
+
+                        <div class="b1">
+                            <label for="Cake-size">Cake size:</label>
+                            <select name="Cake-size" id="Cake-size" required>
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+                    <div class="b2">
+                        <label for="address"></label>
+                        <textarea name="" id="address" cols="30" rows="4" placeholder="address" required></textarea>
+                    </div>
+
+                    <input type="submit" value="Order now" id="submit">
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Delightful Cakes. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
